@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import Components
 import Header from './components/Header';
+import MobileBottomNav from './components/MobileBottomNav';
 
 // Import Pages
 import HomePage from './pages/HomePage';
@@ -13,7 +14,7 @@ import ContactPage from './pages/ContactPage';
 
 /**
  * Main App Component
- * 
+ *
  * Sets up the router and renders the application.
  */
 const App: React.FC = () => {
@@ -22,7 +23,8 @@ const App: React.FC = () => {
       <div className="min-h-screen bg-orange-50">
         <Header />
         {/* Add padding-top to account for fixed header (64px = h-16) */}
-        <main className="pt-16">
+        {/* Add padding-bottom for mobile bottom nav (64px = h-16) */}
+        <main className="pt-16 pb-16 md:pb-0">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/menu" element={<MenuPage />} />
@@ -31,6 +33,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
+        <MobileBottomNav />
       </div>
     </Router>
   );
