@@ -6,6 +6,16 @@ A bilingual (English/Amharic) restaurant menu with interactive 3D burger builder
 
 ---
 
+## 📱 Scan to View Menu
+
+Scan this QR code with your phone to instantly view the menu:
+
+<img src="menu-qr-code.png" alt="Menu QR Code" width="200" />
+
+**Or visit**: [https://restaurant-menu-3d-builder.netlify.app/menu](https://restaurant-menu-3d-builder.netlify.app/menu)
+
+---
+
 ## 🎯 Features
 
 - 🍔 **Interactive Burger Builder** - Build your burger with animated layers
