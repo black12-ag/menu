@@ -1,0 +1,103 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#F5A623',
+          50: '#FEF6E7',
+          100: '#FDEBC7',
+          200: '#FBD68A',
+          300: '#F9C14D',
+          400: '#F5A623',
+          500: '#E08A0B',
+          600: '#B86F09',
+          700: '#905407',
+          800: '#683A05',
+          900: '#401F03',
+        },
+        secondary: {
+          DEFAULT: '#1A1A2E',
+          50: '#3D3D6B',
+          100: '#363660',
+          200: '#2F2F55',
+          300: '#282849',
+          400: '#21213E',
+          500: '#1A1A2E',
+          600: '#131322',
+          700: '#0C0C16',
+          800: '#05050B',
+          900: '#000000',
+        },
+        accent: {
+          DEFAULT: '#FFD700',
+          50: '#FFF9CC',
+          100: '#FFF5A3',
+          200: '#FFED7A',
+          300: '#FFE552',
+          400: '#FFD700',
+          500: '#D4B200',
+          600: '#AA8D00',
+          700: '#806900',
+          800: '#554500',
+          900: '#2B2200',
+        },
+        cream: {
+          DEFAULT: '#FFF8E7',
+          50: '#FFFFFF',
+          100: '#FFFDF8',
+          200: '#FFF8E7',
+          300: '#FFEEC4',
+          400: '#FFE4A1',
+          500: '#FFDA7E',
+          600: '#FFD05B',
+          700: '#FFC638',
+          800: '#FFBC15',
+          900: '#F0AD00',
+        },
+      },
+      fontFamily: {
+        heading: ['Playfair Display', 'serif'],
+        body: ['Inter', 'sans-serif'],
+        accent: ['Poppins', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.3s ease-out',
+        'slide-up': 'slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+        'slide-down': 'slideDown 0.3s ease-out',
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-slow': 'bounce 2s infinite',
+        'spin-slow': 'spin 3s linear infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
+        'glass-dark': '0 8px 32px 0 rgba(0, 0, 0, 0.3)',
+        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        'card-hover': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      },
+      backdropBlur: {
+        'glass': '16px',
+      },
+    },
+  },
+  plugins: [],
+}
