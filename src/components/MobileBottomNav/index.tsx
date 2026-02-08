@@ -4,6 +4,13 @@ import { Link, useLocation } from 'react-router-dom';
 const MobileBottomNav: React.FC = () => {
   const location = useLocation();
 
+  // Hide bottom nav on item detail pages to not cover the "Call to Order" button
+  const isItemDetailPage = location.pathname.startsWith('/item/');
+  
+  if (isItemDetailPage) {
+    return null;
+  }
+
   const navItems = [
     { path: '/', label: 'Home', icon: '🏠' },
     { path: '/menu', label: 'Menu', icon: '🍽️' },
