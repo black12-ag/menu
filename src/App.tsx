@@ -11,6 +11,7 @@ import MenuPage from './pages/MenuPage';
 import ItemDetailPage from './pages/ItemDetailPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import QRCodePage from './pages/QRCodePage';
 
 /**
  * Main App Content Component
@@ -32,6 +33,7 @@ const AppContent: React.FC = () => {
           <Route path="/item/:id" element={<ItemDetailPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/qr-code" element={<QRCodePage />} />
         </Routes>
       </main>
       <MobileBottomNav />
