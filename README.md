@@ -1,8 +1,23 @@
-# 🍽️ Restaurant Menu
+# 🍽️ Cinema Cafe Menu
 
+**Developer**: [@black12-ag](https://github.com/black12-ag)  
 **Live Site**: [https://restaurant-menu-3d-builder.netlify.app](https://restaurant-menu-3d-builder.netlify.app)
 
-A bilingual (English/Amharic) restaurant menu with interactive 3D burger builder.
+A modern, mobile-first digital restaurant menu designed for Cinema Cafe. Features a bilingual (English/Amharic) interface, QR code integration for contactless ordering, and an interactive menu browsing experience optimized for phone users.
+
+---
+
+## 📝 Project Description
+
+Cinema Cafe Menu is a progressive web application built to modernize the dining experience. Customers can scan a QR code at their table to instantly access the full menu on their phones - no app download required. The menu includes 50+ items across 9 categories including Ethiopian specialties, burgers, pizza, pasta, salads, and desserts.
+
+**Key Benefits:**
+
+- 📱 **Contactless Ordering** - Scan QR code to view menu instantly
+- 🌍 **Bilingual Support** - English and Amharic (አማርኛ) languages
+- ⚡ **Fast Loading** - Optimized for mobile networks
+- 🎨 **Beautiful Design** - Modern UI with smooth animations
+- 📞 **One-Tap Calling** - Direct call button for orders
 
 ---
 
