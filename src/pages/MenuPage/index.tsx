@@ -34,7 +34,7 @@ const MenuPage: React.FC = () => {
     });
     
     // Simulate slight delay for search feedback
-    const timer = setTimeout(() => setIsSearching(false), 150);
+    setTimeout(() => setIsSearching(false), 150);
     return filtered;
   }, [selectedCategory, searchTerm]);
 

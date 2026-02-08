@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Minus, Trash2, Check } from 'lucide-react';
+import { Trash2, Check } from 'lucide-react';
 import { Button } from '../Button';
 
 interface Ingredient {

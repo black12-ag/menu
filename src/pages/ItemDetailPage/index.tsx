@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { menuItems } from '../../data/menuData';
 import { BurgerBuilder } from '../../components/BurgerBuilder';
 
 const ItemDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
   const [imageError, setImageError] = useState(false);
 
